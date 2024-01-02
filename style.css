@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url(https://www.cumhuriyet.com.tr/Archive/2020/7/12/1751017/kapak_103403.jpg);
+    background-image: url(https://cdn1.ntv.com.tr/gorsel/bXROhggy0kqX7dPCHJr7NA.jpg?width=1000&mode=crop&scale=both);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -58,4 +58,34 @@ body {
 
 .subnav li a {
     text-decoration: none;
+}
+
+/* ! Text */
+.welcome {
+    text-align: center;
+    margin-top: 15%;
+    color: #DB2B30;
+    font-size: 40px;
+    font-family: 'Homemade Apple', cursive;
+}
+
+/* ! Text Animation */
+@keyframes slide {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(10px);
+        /* Metni aşağı doğru 10 piksel kaydır */
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.welcome h2 {
+    animation: slide 2s linear infinite;
+    /* Animasyon adı, süre, geçiş fonksiyonu, ve tekrar sayısı */
 }
