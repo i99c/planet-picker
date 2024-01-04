@@ -5,7 +5,11 @@
 }
 
 body {
-    background-color: black;
+    background-image: url(https://cdn1.ntv.com.tr/gorsel/bXROhggy0kqX7dPCHJr7NA.jpg?width=1000&mode=crop&scale=both);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     color: #ffffff;
     font-family: 'Merriweather', serif;
 }
@@ -56,200 +60,15 @@ body {
     text-decoration: none;
 }
 
-body {
-    margin: 0;
-    overflow: hidden;
+.planet {
+    transition: transform 0.5s ease-in-out;
 }
 
-.stars {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: black;
+.planet:hover {
+    transform: rotate(360deg);
 }
 
-.stars::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url(https://media.istockphoto.com/id/498478219/tr/foto%C4%9Fraf/stars-at-night-sky.jpg?s=612x612&w=0&k=20&c=u-nDf-l805jHsF3JodJBXwo1pqEKrA-q084rHB3FM4w=) center/cover;
-    z-index: 0;
-    animation: sparkle 5s infinite linear;
+div a {
+    margin-left: 5%;
+    color: #ffffff;
 }
-
-@keyframes sparkle {
-    0% {
-        transform: scale(1);
-        opacity: 0.2;
-    }
-
-    50% {
-        transform: scale(1.5);
-        opacity: 1;
-    }
-
-    100% {
-        transform: scale(1);
-        opacity: 0.2;
-    }
-}
-
-.main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #282c34;
-}
-
-.gezegenler {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.gezegen img {
-    width: 70%;
-    height: 70%;
-}
-
-.gezegen {
-    width: 70%;
-    height: 70%;
-}
-
-.gezegen p {
-    display: none;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #fff;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.gezegen:hover p {
-    display: block;
-}
-
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-.gezegen {
-    animation: rotate 10s linear infinite;
-}
-
-@keyframes rotate-sun {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-/* Örnek gezegen isimlendirmesi */
-@keyframes rotate-planet-Güneş {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes rotate-planet-Mercury {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes rotate-planet-Venüs {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes rotate-planet-Dünya {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes rotate-planet-Mars {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes rotate-planet-Jüpiter {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes rotate-planet-Satürn {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes rotate-planet-Uranüs {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes rotate-planet-Neptün {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-/* Diğer gezegenler için aynı şekilde devam edebilirsiniz */
