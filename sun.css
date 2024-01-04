@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://cdn1.ntv.com.tr/gorsel/bXROhggy0kqX7dPCHJr7NA.jpg?width=1000&mode=crop&scale=both);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+    font-family: 'Roboto Slab', serif;
+    margin: 0;
+    /* Sayfa kenar boşluklarını kaldırmak için */
+}
+
+/* İsteğe bağlı: Sayfa içeriğini belirli bir opaklıkta olacak şekilde ayarlamak için */
+.content {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Siyah bir yarı saydamlık eklemek için */
+    padding: 20px;
+    /* İçerikle kenar boşluk eklemek için */
+}

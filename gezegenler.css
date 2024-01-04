@@ -5,13 +5,13 @@
 }
 
 body {
-    background-image: url(https://cdn1.ntv.com.tr/gorsel/bXROhggy0kqX7dPCHJr7NA.jpg?width=1000&mode=crop&scale=both);
+    background-color: black;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     color: #ffffff;
-    font-family: 'Merriweather', serif;
+    font-family: 'Dancing Script', cursive;
 }
 
 .nav,
@@ -53,6 +53,7 @@ body {
     display: inline-block;
     margin: 0 10px;
     flex: 1;
+    font-size: 20px;
     /* Eğer gerekirse, öğelerin eşit genişliğe sahip olmasını sağlar */
 }
 
@@ -60,15 +61,631 @@ body {
     text-decoration: none;
 }
 
-.planet {
-    transition: transform 0.5s ease-in-out;
+/* ! Gezegenler */
+/* Güneş */
+#sun {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background-image: url(https://media.istockphoto.com/id/178149253/tr/foto%C4%9Fraf/deep-space-background.jpg?s=612x612&w=0&k=20&c=-TPtfeAgZaWH_VuIXgtzFCEi8sO-rKn6bJBimhFToxQ=);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    /* Set text color to white */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    z-index: 1;
 }
 
-.planet:hover {
-    transform: rotate(360deg);
+#sun a {
+    margin-left: 20%;
+    text-decoration: none;
+    text-align: center;
+    color: cornflowerblue;
+    font-size: 20px;
+    font-style: bold;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-div a {
-    margin-left: 5%;
+#mercury a {
+    margin-left: 20%;
+    text-decoration: none;
+    text-align: center;
+    color: cornflowerblue;
+    font-size: 20px;
+    font-style: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#venus a {
+    margin-left: 20%;
+    text-decoration: none;
+    text-align: center;
+    color: cornflowerblue;
+    font-size: 20px;
+    font-style: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#earth a {
+    margin-left: 20%;
+    text-decoration: none;
+    text-align: center;
+    color: cornflowerblue;
+    font-size: 20px;
+    font-style: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#mars a {
+    margin-left: 20%;
+    text-decoration: none;
+    text-align: center;
+    color: cornflowerblue;
+    font-size: 20px;
+    font-style: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#jupiter a {
+    margin-left: 20%;
+    text-decoration: none;
+    text-align: center;
+    color: cornflowerblue;
+    font-size: 20px;
+    font-style: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#saturn a {
+    margin-left: 20%;
+    text-decoration: none;
+    text-align: center;
+    color: cornflowerblue;
+    font-size: 20px;
+    font-style: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#uranus a {
+    margin-left: 20%;
+    text-decoration: none;
+    text-align: center;
+    color: cornflowerblue;
+    font-size: 20px;
+    font-style: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#neptune a {
+    margin-left: 20%;
+    text-decoration: none;
+    text-align: center;
+    color: cornflowerblue;
+    font-size: 20px;
+    font-style: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#sun::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Darken the background by increasing the alpha value */
+    z-index: -1;
+    /* Set a lower z-index for the pseudo-element */
+}
+
+.ilk-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.ilk-content div {
+    margin-top: 20px;
+    text-align: right;
+    display: inline-block;
+    /* Ekleyin */
+}
+
+.ilk-content h1 {
+    margin-left: 15%;
+    text-align: center !important;
+}
+
+.ilk-content h2 {
+    margin-top: 15%;
+    text-align: center !important;
+}
+
+/* Set a higher z-index for the main container */
+/* Mercury */
+#mercury {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background-image: url(https://cdn.pixabay.com/photo/2017/09/12/11/56/universe-2742113_640.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    /* Set text color to white */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    z-index: 1;
+}
+
+#mercury::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Darken the background by increasing the alpha value */
+    z-index: -1;
+    /* Set a lower z-index for the pseudo-element */
+}
+
+#venus {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background-image: url(https://cdn.pixabay.com/photo/2018/08/15/13/10/galaxy-3608029_640.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    /* Set text color to white */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    z-index: 1;
+}
+
+#venus::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Darken the background by increasing the alpha value */
+    z-index: -1;
+    /* Set a lower z-index for the pseudo-element */
+}
+
+#earth {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background-image: url(https://cdn.pixabay.com/photo/2016/08/24/14/29/earth-1617121_640.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    /* Set text color to white */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    z-index: 1;
+}
+
+#earth::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Darken the background by increasing the alpha value */
+    z-index: -1;
+    /* Set a lower z-index for the pseudo-element */
+}
+
+#mars {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background-image: url(https://cdn.pixabay.com/photo/2013/01/05/20/00/milky-way-74005_640.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    /* Set text color to white */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    z-index: 1;
+}
+
+#mars::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Darken the background by increasing the alpha value */
+    z-index: -1;
+    /* Set a lower z-index for the pseudo-element */
+}
+
+#jupiter {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background-image: url(https://cdn.pixabay.com/photo/2016/11/21/17/41/star-trails-1846734_640.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    /* Set text color to white */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    z-index: 1;
+}
+
+#jupiter::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Darken the background by increasing the alpha value */
+    z-index: -1;
+    /* Set a lower z-index for the pseudo-element */
+}
+
+#saturn {
+    position: relative;
+    width: 100%;
+    min-height: 700px;
+    /* Değişiklik: height yerine min-height kullanıldı */
+    background-image: url(https://media.istockphoto.com/id/1399246824/tr/foto%C4%9Fraf/digital-eye-wave-lines-stock-background.jpg?s=612x612&w=0&k=20&c=8d63UKXd42dPHLzGyFfPNfcMYrwe2YAPued6h9AdVcs=);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    /* Değişiklik: flex-direction eklendi */
+    justify-content: center;
+}
+
+#saturn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Darken the background by increasing the alpha value */
+    z-index: -1;
+    /* Set a lower z-index for the pseudo-element */
+}
+
+#saturn img {
+    width: 55%;
+    height: 55%;
+}
+
+/* Başlık stili: */
+#saturn h2 {
+    max-width: 600px;
+    /* Değişiklik: Maksimum genişlik belirlendi */
+    margin: 0 auto;
+    /* Değişiklik: Merkezi hizalandı */
+}
+
+#uranus {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background-image: url(https://media.istockphoto.com/id/1183329518/tr/foto%C4%9Fraf/kozmik-bulutsu-ve-parlayan-y%C4%B1ld%C4%B1zlar.jpg?s=612x612&w=0&k=20&c=KAWrIZJjCTgkxkwfwo4iH0Ts2SO7tXmxl-su_KwJfwg=);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    /* Set text color to white */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    z-index: 1;
+}
+
+#uranus::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Darken the background by increasing the alpha value */
+    z-index: -1;
+    /* Set a lower z-index for the pseudo-element */
+}
+
+#neptune {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background-image: url(https://media.istockphoto.com/id/1040334020/tr/foto%C4%9Fraf/uzay-ve-galaxy-%C4%B1%C5%9F%C4%B1k-h%C4%B1z%C4%B1-seyahat-nasa-taraf%C4%B1ndan-d%C3%B6%C5%9Fenmi%C5%9F-bu-g%C3%B6r%C3%BCnt%C3%BC-unsurlar%C4%B1.jpg?s=612x612&w=0&k=20&c=LaHtgX1W4_lWWch6xUXtklp32fYaYQSrrqP1r_Lmdxc=);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    /* Set text color to white */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    z-index: 1;
+}
+
+#neptune::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Darken the background by increasing the alpha value */
+    z-index: -1;
+    /* Set a lower z-index for the pseudo-element */
+}
+
+/* BTN */
+.sun-btn {
+    background-color: #041f4a;
     color: #ffffff;
+    /* Beyaz renk yazı için */
+    font-size: 16px;
+    width: 400px;
+    margin-top: 32%;
+    height: 60px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sun-btn:hover {
+    background-color: #00111f;
+    /* Hover durumunda daha koyu bir mavi tonu */
+}
+
+.mercury-btn {
+    background-color: #041f4a;
+    color: #ffffff;
+    /* Beyaz renk yazı için */
+    font-size: 16px;
+    width: 400px;
+    margin-top: 32%;
+    height: 60px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.mercury-btn:hover {
+    background-color: #00111f;
+    /* Hover durumunda daha koyu bir mavi tonu */
+}
+
+.venus-btn {
+    background-color: #041f4a;
+    color: #ffffff;
+    /* Beyaz renk yazı için */
+    font-size: 16px;
+    width: 400px;
+    margin-top: 32%;
+    height: 60px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.venus-btn:hover {
+    background-color: #00111f;
+    /* Hover durumunda daha koyu bir mavi tonu */
+}
+
+.earth-btn {
+    background-color: #041f4a;
+    color: #ffffff;
+    /* Beyaz renk yazı için */
+    font-size: 16px;
+    width: 400px;
+    margin-top: 32%;
+    height: 60px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.earth-btn:hover {
+    background-color: #00111f;
+    /* Hover durumunda daha koyu bir mavi tonu */
+}
+
+.mars-btn {
+    background-color: #041f4a;
+    color: #ffffff;
+    /* Beyaz renk yazı için */
+    font-size: 16px;
+    width: 400px;
+    margin-top: 32%;
+    height: 60px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.mars-btn:hover {
+    background-color: #00111f;
+    /* Hover durumunda daha koyu bir mavi tonu */
+}
+
+.jupiter-btn {
+    background-color: #041f4a;
+    color: #ffffff;
+    /* Beyaz renk yazı için */
+    font-size: 16px;
+    width: 400px;
+    margin-top: 32%;
+    height: 60px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.jupiter-btn:hover {
+    background-color: #00111f;
+    /* Hover durumunda daha koyu bir mavi tonu */
+}
+
+.saturn-btn {
+    background-color: #00111f;
+    color: #ffffff;
+    font-size: 14px;
+    width: 200px;
+    margin-top: 32%;
+    margin-left: 80%;
+    height: 60px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.saturn-btn:hover {
+    background-color: #002240;
+}
+
+.uranus-btn {
+    background-color: #041f4a;
+    color: #ffffff;
+    /* Beyaz renk yazı için */
+    font-size: 16px;
+    width: 400px;
+    margin-top: 32%;
+    height: 60px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.uranus-btn:hover {
+    background-color: #00111f;
+    /* Hover durumunda daha koyu bir mavi tonu */
+}
+
+.neptune-btn {
+    background-color: #041f4a;
+    color: #ffffff;
+    /* Beyaz renk yazı için */
+    font-size: 16px;
+    width: 400px;
+    margin-top: 32%;
+    height: 60px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.neptune-btn:hover {
+    background-color: #00111f;
+    /* Hover durumunda daha koyu bir mavi tonu */
+}
+
+#sun h1 {
+    /* Güneş temasına uygun sıcak tonlarda bir geçişli gradyan renk */
+    background: linear-gradient(45deg, #FFD700, #FF4500);
+    /* Metin rengini şeffaf (transparent) yap */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    /* Yazı stilini istediğiniz gibi ayarlayabilirsiniz */
+    font-size: 2em;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#mercury h1 {
+    /* Mercury temasına uygun renkler */
+    color: #304B97;
+    /* MediumAquaMarine gibi bir renk seçebilirsiniz */
+}
+
+#venus h1 {
+    color: #73320B;
+}
+
+#earth h1 {
+    color: #4F4E62;
+}
+
+#mars h1 {
+    color: #AA8056;
+}
+
+#jupiter h1 {
+    color: #A17850;
+}
+
+#saturn h1 {
+    color: #8F423B;
+}
+
+#uranus h1 {
+    color: #B5DBDE;
+}
+
+#neptune h1 {
+    color: #2F40A8;
 }
